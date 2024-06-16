@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
     'team',
+    'faq',
 ]
 
 MIDDLEWARE = [
