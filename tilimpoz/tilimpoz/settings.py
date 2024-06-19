@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'core',
     'team',
     'faq',
+    'contacts',
+    'qa',
 ]
 
 MIDDLEWARE = [
