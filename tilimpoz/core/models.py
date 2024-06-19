@@ -1,4 +1,4 @@
-# core/models.py
+# core/questions.py
 from django.db import models
 
 class Article(models.Model):
