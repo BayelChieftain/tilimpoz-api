@@ -9,5 +9,6 @@ urlpatterns = [
                   path('api/', include('core.urls')),
                   path('api/team/', include('team.urls')),
                   path('api/faq/', include('faq.urls')),
+                  path('api/contacts/', include('contacts.urls')),
                   path('', RedirectView.as_view(url='/api/', permanent=True)),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
