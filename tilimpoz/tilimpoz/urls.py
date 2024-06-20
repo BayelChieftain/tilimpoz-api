@@ -13,5 +13,9 @@ urlpatterns = [
                   path('api/qa/', include('qa.urls')),
                   path('api/rules/', include('rules.urls')),
                   path('api/etymology/', include('etymology.urls')),
+                  path('api/tilibizde/', include('tilibizde.urls')),
+                  path('api/documents/', include('documents.urls')),
+                  path('api/books/', include('books.urls')),
+                  path('api/categories/', include('categories.urls')),
                   path('', RedirectView.as_view(url='/api/', permanent=True)),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
