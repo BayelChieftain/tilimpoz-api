@@ -11,5 +11,6 @@ urlpatterns = [
                   path('api/faq/', include('faq.urls')),
                   path('api/contacts/', include('contacts.urls')),
                   path('api/qa/', include('qa.urls')),
+                  path('api/rules/', include('rules.urls')),
                   path('', RedirectView.as_view(url='/api/', permanent=True)),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
