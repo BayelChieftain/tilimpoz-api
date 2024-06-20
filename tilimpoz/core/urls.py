@@ -1,10 +1,7 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import ArticleViewSet
-
-router = DefaultRouter()
-router.register(r'articles', ArticleViewSet)
+# articles/urls.py
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', views.ArticleListCreateAPIView.as_view(), name='article-list-create'),
 ]

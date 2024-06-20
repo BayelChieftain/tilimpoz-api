@@ -1,7 +1,7 @@
-from rest_framework import viewsets
+from rest_framework import generics
 from .models import Rule
 from .serializers import RuleSerializer
 
-class RuleViewSet(viewsets.ModelViewSet):
+class RuleListCreateAPIView(generics.ListCreateAPIView):
     queryset = Rule.objects.all()
     serializer_class = RuleSerializer
