@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'documents',
     'books',
     'categories',
+    'sozduk',
+    'about',
 ]
 
 MIDDLEWARE = [

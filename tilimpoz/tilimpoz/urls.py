@@ -17,5 +17,7 @@ urlpatterns = [
                   path('api/documents/', include('documents.urls')),
                   path('api/books/', include('books.urls')),
                   path('api/categories/', include('categories.urls')),
+                  path('api/sozduk/', include('sozduk.urls')),
+                  path('api/about/', include('about.urls')),
                   path('', RedirectView.as_view(url='/api/', permanent=True)),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
