@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'contacts',
     'qa',
     'rules',
+    'etymology',
 ]
 
 MIDDLEWARE = [
