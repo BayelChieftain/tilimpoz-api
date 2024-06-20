@@ -33,6 +33,10 @@ INSTALLED_APPS = [
     'qa',
     'rules',
     'etymology',
+    'tilibizde',
+    'documents',
+    'books',
+    'categories',
 ]
 
 MIDDLEWARE = [
