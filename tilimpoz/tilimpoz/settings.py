@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'categories',
     'sozduk',
     'about',
+    'tests',
 ]
 
 MIDDLEWARE = [
